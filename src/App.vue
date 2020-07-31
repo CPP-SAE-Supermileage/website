@@ -3,18 +3,18 @@
     <Menu/>
     <v-main> 
 		<Slideshow :imgs="[logo, carRender, window, profile, fiberGlass]"/> 
-		<About/>
+		<About id="idAbout"/>
 
 		<ImageDisplayer :imgSrc="profile" :displayHeight="200" headerTxt="Header Text" txt="Other Text"/>
-		<Competitions/>
+		<Competitions id="idCompetitions"/>
 		
-		<ImageDisplayer :imgSrc="window" :displayHeight="200" headerTxt="Sponsors" txt="None of this would be possible without our sponsors"/>
+		<ImageDisplayer id="idSponsors" :imgSrc="window" :displayHeight="200" headerTxt="Sponsors" txt="None of this would be possible without our sponsors"/>
 		<Sponsors/>
 
-		<ImageDisplayer :imgSrc="window" :displayHeight="200" headerTxt="Donate to CPP SAE Supermileage"/>
+		<ImageDisplayer id="idDonate" :imgSrc="window" :displayHeight="200" headerTxt="Donate to CPP SAE Supermileage"/>
 		<Donate/>
 
-		<Contact/>
+		<Contact id="idContact"/>
     </v-main>
   </v-app>
 </template>

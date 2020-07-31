@@ -20,6 +20,10 @@
         <v-btn  @click="jumpToElement('idCompetitions')"  text>
             <span>Competitions</span>       
         </v-btn>
+        
+        <v-btn  @click="jumpToElement('idSponsors')"  text>
+            <span>Sponsors</span>       
+        </v-btn>
 
         <v-btn  @click="jumpToElement('idDonate')"  text>
             <span>Donate</span>
@@ -40,6 +44,11 @@
         
         <v-btn  @click="jumpToElement('idCompetitions')"  text>
             <span>Competitions</span>       
+        </v-btn>
+        <br><br>
+        
+        <v-btn  @click="jumpToElement('idSponsors')"  text>
+            <span>Sponsors</span>       
         </v-btn>
         <br><br>
         
