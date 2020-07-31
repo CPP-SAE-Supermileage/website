@@ -3,8 +3,20 @@
     <h2>
       Contact
     </h2>
-    <p>
-      Need to put insta page info, lab building and maybe officer emails/contact if they want.
-    </p>
+    <div class="d-flex justify-content-center">
+      <div class='clickme'>
+        <a href="https://www.instagram.com/cppsupermileage/">
+          <v-img alt="Instagram Logo" height='100' width='100' contain :src="require('@/assets/insta.png')" /></a>
+      </div>
+      <div class='clickme'>
+        <a href="https://mybar.cpp.edu/organization/saesupermileage/">
+          <v-img alt="myBar Logo" height='100' width='100' contain :src="require('@/assets/bar.jpg')" /></a>
+      </div>
+    </div>
   </v-container>
 </template>
+<style>
+ .clickme{
+   margin: 1em;
+ }
+</style>
