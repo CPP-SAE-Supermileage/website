@@ -1,8 +1,5 @@
 <template>
   <v-container class="text-center">
-    <h2>
-      Donate
-    </h2>
     <p>
       Support our club!
     </p>
