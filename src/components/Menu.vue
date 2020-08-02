@@ -1,5 +1,11 @@
 <template>
-<v-card>
+<!-- DO NOT ADD NEW MENU BUTTONS HERE.                                                              -->
+<!-- Please see ./subcomponents/MenuButtons.vue for adding new buttons                              -->
+<!-- After ADDING a new button, you must adjust the conditional on line 50 by adding to the number  -->
+<!-- This will make the menu buttons collapse at a larger screen width, to account for the space    -->
+<!--    required by the new button                                                                  -->
+
+<div>
 
 <v-app-bar  ref="appBarRef"  app  color="primary"  dark>
     <div>
@@ -12,86 +18,39 @@
         <v-app-bar-nav-icon  @click.stop="drawer=!drawer"></v-app-bar-nav-icon>
     </div>
 
-    <div v-else> 
-        <v-btn  @click="jumpToElement('idAbout')"  text>
-            <span>About</span>     
-        </v-btn>
-
-        <v-btn  @click="jumpToElement('idCompetitions')"  text>
-            <span>Competitions</span>       
-        </v-btn>
-        
-        <v-btn  @click="jumpToElement('idSponsors')"  text>
-            <span>Sponsors</span>       
-        </v-btn>
-
-        <v-btn  @click="jumpToElement('idDonate')"  text>
-            <span>Donate</span>
-        </v-btn>
-      
-        <v-btn  @click="jumpToElement('idContact')"  text>
-            <span>Contact</span>  
-        </v-btn>
+    <div id="ignoreMenuButtonBreaks" v-else> 
+        <MenuButtons/>
     </div>     
 </v-app-bar>
 
 <v-navigation-drawer  v-model="drawer"  v-if="displayHamburger"  color="primary"  width="160"  app  right  temporary  dark>
-        <br><br>
-        <v-btn  @click="jumpToElement('idAbout')"  text>
-            <span>About</span>       
-        </v-btn>
-        <br><br>
-        
-        <v-btn  @click="jumpToElement('idCompetitions')"  text>
-            <span>Competitions</span>       
-        </v-btn>
-        <br><br>
-        
-        <v-btn  @click="jumpToElement('idSponsors')"  text>
-            <span>Sponsors</span>       
-        </v-btn>
-        <br><br>
-        
-        <v-btn  @click="jumpToElement('idDonate')"  text>
-            <span>Donate</span>
-        </v-btn>
-        <br><br>
-        
-        <v-btn  @click="jumpToElement('idContact')"  text>
-            <span>Contact</span>  
-        </v-btn>
+    <MenuButtons/>
 </v-navigation-drawer>
-</v-card>
+
+</div>
 </template>
 
 <script>
+import MenuButtons from './subcomponents/MenuButtons';
 export default 
-{
+{   
     name: "Menu",
     data: () =>
     ({
         displayHamburger: false,
         drawer: false,
     }),
+    
+    components:
+    {
+        MenuButtons,
+    },
   
     methods:
     {
         checkBarWidth()
         {
-            this.displayHamburger = window.innerWidth < 800;
-        },
-        
-        jumpToElement(idTarget)
-        {
-           // document.getElementById(idTarget).scrollIntoView() has issues with an offset scroll. The "-55" corrects this.
-           // This -55 may or may not need to be further tweaked after future changes.
-           const y = document.getElementById(idTarget).getBoundingClientRect().top + window.pageYOffset - 55;
-           
-           // Note: smooth scroll currently doesn't seem to work on mobile (it still scrolls, just not smoothly).
-           // Not really an issue, but would be cool if someone knew how to make it work.
-           window.scrollTo({top: y, behavior: 'smooth'});
-           if(this.drawer)
-                this.drawer = false;
+            this.displayHamburger = window.innerWidth < 850;
         },
     },
   
@@ -110,4 +69,5 @@ export default
 
 <style>
     .logo{width: 13em;}
+    #ignoreMenuButtonBreaks br {display: none;}
 </style>

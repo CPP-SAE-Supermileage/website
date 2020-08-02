@@ -1,4 +1,8 @@
 <template>
+<!-- IMPORTANT: Each section in the webpage with a menu button requires one element associated with that section be assigned an id -->
+<!-- This is so the menu button knows where to scroll to                                                                           -->
+<!-- Please follow the conventions below for id names (idAbout, idCompetitions, etc.)                                              -->
+
   <v-app>
     <Menu/>
     <v-main> 
@@ -27,7 +31,7 @@
 	import Donate         from './components/Donate';
 	import Contact        from './components/Contact';
 	import ImageDisplayer from './components/ImageDisplayer';
-	import Sponsors		  from './components/Sponsors'
+	import Sponsors		  from './components/Sponsors';
 
 	export default 
 	{
@@ -64,4 +68,6 @@
         padding-left: 10vw;
         padding-right: 10vw;
     }
+    h2
+    {    text-align: center;}
 </style>
