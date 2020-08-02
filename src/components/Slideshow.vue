@@ -2,8 +2,7 @@
   <div>
     <v-carousel
       cycle
-      height="30em"
-      progress
+      height="100%"
       show-arrows-on-hover>
         <v-carousel-item
           v-for="(img, i) in imgs"
@@ -17,9 +16,9 @@
 export default {
   name: "Slideshow",
   props: {
-    imgs: {
-      type: Array,
-    },
+    // imgs: {
+    //   type: Array,
+    // },
     delay: {
       type: Number,
       default: 4000,
@@ -28,11 +27,17 @@ export default {
 
   data() {
     return {
-      
+      imgs:[]
     };
+  },
+  mounted() {
+    this.importAll(require.context('@/assets/slideshow/', true, /\.(jpg|png|svg)$/))
   },
 
   methods: {
+    importAll(r) {
+      r.keys().forEach(key =>(this.imgs.push({ src: r(key), pathShort: key })));
+    }
   },
   computed: {
   }

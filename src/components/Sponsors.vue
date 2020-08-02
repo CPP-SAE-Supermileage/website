@@ -1,9 +1,9 @@
 <template>
   <v-container class="text-center">
     <v-row v-for="(row, i) in sponsorList" :key="i">
-      <v-col v-for="sponsor in row" :key="sponsor.name">
-        <a :href="sponsor.link" target="_blank">
-          <img v-if="sponsor.img" :src="sponsor.src" :alt="sponsor.name+' logo'"/>
+      <v-col v-for="sponsor in row" :key="sponsor.name" >
+        <a :href="sponsor.link" target="_blank"  >
+          <img v-if="sponsor.img" :src="sponsor.src"  :alt="sponsor.name+' logo'"/>
           <p v-else>{{sponsor.name}}</p>
         </a>
       </v-col>
@@ -35,5 +35,7 @@ import json from '@/assets/sponsors/sponsors.json'
 <style scoped>
 img{
   height: 5em;
+  margin: 5px;
+  position: relative;
 }
 </style>

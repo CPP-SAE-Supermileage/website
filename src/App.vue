@@ -6,7 +6,7 @@
   <v-app>
     <Menu/>
     <v-main> 
-		<Slideshow :imgs="[logo, carRender, window, profile, fiberGlass]"/> 
+		<Slideshow /> 
 		<About id="idAbout"/>
 
 		<ImageDisplayer :imgSrc="profile" :displayHeight="200" headerTxt="Header Text" txt="Other Text"/>
