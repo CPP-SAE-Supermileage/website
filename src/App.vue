@@ -9,7 +9,7 @@
 		<Slideshow /> 
 		<About id="idAbout"/>
 
-		<ImageDisplayer :imgSrc="profile" :displayHeight="200" headerTxt="Header Text" txt="Other Text"/>
+		<ImageDisplayer :imgSrc="profile" :displayHeight="200" headerTxt="Join the Team" txt="Become apart of something bigger than ourselves!"/>
 		<Competitions id="idCompetitions"/>
 		
 		<ImageDisplayer id="idSponsors" :imgSrc="window" :displayHeight="200" headerTxt="Sponsors" txt="None of this would be possible without our sponsors"/>
