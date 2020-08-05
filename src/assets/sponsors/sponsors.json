@@ -18,56 +18,89 @@
             "img": "LagunaTools.png"
         },
         {
-            "name": "Tru-Form Plastics"
+            "name": "Tru-Form Plastics",
+            "link": "https://tru-formplastics.com/",
+            "img": "tfp-logo-2020-1.svg"
+            
         },
         {
-            "name": "Intertrade Industries"
+            "name": "Intertrade Industries",
+            "link": "https://tru-formplastics.com/",  
+            "img": "tfp-logo-2020-1.svg",
+            "_comment": "This is the same as tru form plastics"
         },
         {
-            "name": "Revchem Composites"
+            "name": "Revchem Composites",
+            "link": "https://revchem.com/",
+            "img": "revchem-blue-1color.jpg"
         },
         {
-            "name": "Duratec Surface Technologies"
+            "name": "Duratec Surface Technologies",
+            "link": "https://duratec1.com/duratec/",
+            "img": "duratec.png"
         },
         {
-            "name": "Simscale"
+            "name": "Simscale",
+            "link": "https://www.simscale.com/",
+            "img": "simscale-logo-twitter.png"
         }
     ],
     [
         {
-            "name": "Coast Aluminum"
+            "name": "Coast Aluminum",
+            "link": "https://coastaluminum.com/",
+            "img": "CoastAluminum.png"
         },
         {
-            "name": "Aventon Bikes"
+            "name": "Aventon Bikes",
+            "link": "https://www.aventon.com/",
+            "img": "aventon.png"
         },
         {
-            "name": "Avant Sports"
+            "name": "Avant Sports",
+            "link": "https://lagunatools.com/",
+            "img": "LagunaTools.png"
         },
         {
-            "name": "6KU"
+            "name": "6KU",
+            "link": "https://www.6ku.com/",
+            "img": "6ku.jpeg"
         },
         {
-            "name": "Full Factory"
+            "name": "Full Factory",
+            "link": "https://fullfactorydistro.com/",
+            "img": "fullfactory.png"
         },
         {
-            "name": "Odyssey"
+            "name": "Odyssey",
+            "link": "https://odysseybmx.com/",
+            "img": "odyssey.png"
         }
     ],
     [
         {
-            "name": "Advanced Fiberglass Concepts"
+            "name": "Advanced Fiberglass Concepts",
+            "link": "https://www.advfiberglass.com/",
+            "img": "Advanced_Fiberglass_Concepts.png"
         },
         {
-            "name": "Performance Fiberglass"
+            "name": "Performance Fiberglass",
+            "link": "https://www.pfrepair.com/",
+            "img": "performance_fiberglass.jpg"
         },
         {
-            "name": "West Whittier Paint"
+            "name": "West Whittier Paint",
+            "link": "http://westwhittierpaint.com/",
+            "img": "westwhittierpaint.png"
         },
         {
-            "name": "Hasko Trading"
+            "name": "Hasko Trading",
+            "img": "hasko.jpg"
         },
         {
-            "name": "Ecotron"
+            "name": "Ecotron",
+            "link": "http://www.ecotrons.com/",
+            "img": "ecotron.png"
         }
     ]
 ]
