@@ -11,7 +11,7 @@
 
 		<ImageDisplayer :imgSrc="profile" :displayHeight="200" headerTxt="Join the Team" txt="Become apart of something bigger than ourselves!"/>
 		<Competitions id="idCompetitions"/>
-		
+		<Members id="idMembers"/>
 		<ImageDisplayer id="idSponsors" :imgSrc="window" :displayHeight="200" headerTxt="Sponsors" txt="None of this would be possible without our sponsors"/>
 		<Sponsors/>
 
@@ -32,6 +32,7 @@
 	import Contact        from './components/Contact';
 	import ImageDisplayer from './components/ImageDisplayer';
 	import Sponsors		  from './components/Sponsors';
+    import Members        from './components/Members';
 
 	export default 
 	{
@@ -47,6 +48,7 @@
 			Contact,
 			ImageDisplayer,
 			Sponsors,
+            Members,
 		},
 
 		data: () => 

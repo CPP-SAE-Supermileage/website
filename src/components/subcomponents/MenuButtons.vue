@@ -8,6 +8,7 @@
     <br><br>
     <MenuButton buttonText="About"        targetId="idAbout"/>       <br><br>
     <MenuButton buttonText="Competitions" targetId="idCompetitions"/><br><br>
+    <MenuButton buttonText="Members"      targetId="idMembers"/>     <br><br>
     <MenuButton buttonText="Sponsors"     targetId="idSponsors"/>    <br><br>
     <MenuButton buttonText="Donate"       targetId="idDonate"/>      <br><br>
     <MenuButton buttonText="Contact"      targetId="idContact"/>     <br><br>

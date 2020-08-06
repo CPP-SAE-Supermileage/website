@@ -50,7 +50,7 @@ export default
     {
         checkBarWidth()
         {
-            this.displayHamburger = window.innerWidth < 850;
+            this.displayHamburger = window.innerWidth < 950;
         },
     },
   
