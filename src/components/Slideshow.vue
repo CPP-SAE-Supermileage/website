@@ -30,13 +30,13 @@ export default {
       imgs:[]
     };
   },
-  mounted() {
+  created() {
     this.importAll(require.context('@/assets/slideshow/', true, /\.(jpg|png|svg)$/))
   },
 
   methods: {
     importAll(r) {
-      r.keys().forEach(key =>(this.imgs.push({ src: r(key), pathShort: key })));
+      r.keys().forEach(key =>(this.imgs.push({ src: r(key) })));
     }
   },
   computed: {
