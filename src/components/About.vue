@@ -14,20 +14,18 @@
     </p>
   -->
     <p class="paragraph font-weight-regular">
-      <span class="tab">CPP SAE Supermileage was founded to engineer the most fuel</span>
-      efficient vehicles to fight against the climate change. Although it’s established in Fall
-      2018, the team built the Cal Poly Pomona’s first ever super fuel efficient
-      vehicle, Moonshot, from scratch in little bit over a year with no prior experience. CPP
-      SAE Supermileage designs, analyzes and manufactures its own aerodynamic shell,
-      chassis, steering system and power control units in house with funds from sponsors
-      and donors, almost entirely. In an attempt to create the ultimate fuel efficiency
-      machine, the team decided to embrace the latest developments in machine learning,
-      computer vision, sensor fusion and autonomous driving, and formed into an
-      engineering+computer science driven organization in early 2020.
+      <span class="tab"/>Established in the fall of 2018, Cal. Poly Pomona's Society of Automotive Engineers Supermileage 
+      was founded to engineer the most fuel efficient vehicles to fight against climate change. 
+      Despite no prior experience, our team built Cal. Poly Pomona’s first ever super-fuel-efficient vehicle, Moonshot, 
+      from scratch in just over a year. CPP SAE Supermileage designs, analyzes and manufactures its own aerodynamic shells,
+      chassis, steering systems and power control units in-house with funds from sponsors
+      and donors. To create the ultimate fuel efficient machine, our team has embraced the latest developments in machine learning,
+      computer vision, sensor fusion and autonomous driving, forming into an
+      engineering and computer science driven organization in early 2020.
       <br>
       <br>
-      <span class="tab">Although we are made up from engineering and computer science students,</span>
-      welcome any student who is very motivated to go the extra mile with us!
+      <span class="tab"/>Although primarily comprised of engineering and computer science students,
+      we welcome any individual motivated to go the extra mile with us!
     </P>
     <v-btn href="" target="_blank">
       Engineering

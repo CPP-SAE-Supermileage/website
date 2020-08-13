@@ -12,13 +12,36 @@
 <v-container>
     <h2>Active Members</h2>
     <v-row justify="center">
-    <MemberCard name="Daniel Milligan" roles="Software Team and Website Developer" email="ddmilligan@cpp.edu" github="The-Mills"/>
-    <MemberCard name="John Smith" roles="Supreme Overlord" email="johnsmith1234@gmail.com" discord="johnsmith#1234"
-        github="404" imageName="Example.png"/>
-    
-    
-    <!-- DO NOT ADD MemberCards OUTSIDE OF THIS V-ROW -->
+        <MemberCard name="Dakota Eckheart" roles="Treasurer and Software Team Member" email="deckheart@cpp.edu" 
+          discord="dakota#7191" github="deckheart" imageName="DE.png"/>
+          
+        <MemberCard name="Steven Chan" roles="Software Team Member" email="sychan@cpp.edu"
+          discord="Banana#4408" github="FeelsBadnana" imageName="SC.png"/>
+          
+        <MemberCard name="Daniel Milligan" roles="Software Team and Website Developer" email="ddmilligan@cpp.edu" 
+          github="The-Mills"/>
+              
+        <!-- DO NOT ADD MemberCards OUTSIDE OF THIS V-ROW -->
     </v-row>
+    
+    <h2>Advisors</h2>
+    <v-row justify="center">
+        <MemberCard name="Dr. Castro" roles="Faculty Advisor"/>
+        <MemberCard name="Arda Buyuksan" roles="Founder, President (2018-2019), and Alumni Advisor"/>
+    </v-row>
+    
+    
+    <h2>Alumni and Former Members</h2>
+    <p>
+        Josue Castaneda - President (2019-2020)<br>
+        Matthew Caballero - Vice President (????)<br>
+        Peter Kyunghoon Lee - Treasurer (????)<br>
+        Matthew Bell<br>
+        Alejandro Robles<br>
+        Kate Ly<br>
+        Jiangzheng Pan<br>
+        Stuart Geyer - Honorary Member(what?)<br>
+    </p>
 </v-container>
 </template>
 
