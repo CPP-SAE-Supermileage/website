@@ -14,11 +14,16 @@
     <v-card-subtitle  class="memberCardSubtitle">{{subtitleText}}</v-card-subtitle>
     
     <v-card-text>
-    <v-row>
-        <v-img   v-if="email"   height='2.4em' width='2.4em' @mouseover="showInfo(0)" @mouseout="hideInfo()" alt="Email Icon"    contain @click="copyText()"  :src="require('@/assets/members/EmailIcon.png')"/>
-        <v-img   v-if="github"  height='2.4em' width='2.4em' @mouseover="showInfo(2)" @mouseout="hideInfo()" alt="Github Link"   contain @click="openInNewTab('https://www.github.com/' + github)"  :src="require('@/assets/members/GithubIcon.png')" />
-        <v-img   v-if="discord" height='2.4em' width='2.4em' @mouseover="showInfo(1)" @mouseout="hideInfo()" alt="Discord Icon"  contain @click="copyText()"  :src="require('@/assets/members/DiscordIcon.png')" />
-       
+    <v-row style="text-align:center">
+        <v-col v-if="email">
+        <font-awesome-icon :icon="['fas', 'envelope-square']" size='3x' style="color:black" width='2.4em' @mouseover="showInfo(0)" @mouseout="hideInfo()" alt="Email Icon"    contain @click="copyText()"  :src="require('@/assets/members/EmailIcon.png')"/>
+        </v-col>
+        <v-col v-if="github">
+        <font-awesome-icon :icon="['fab', 'github-square']" size='3x' style="color:black"   width='2.4em' @mouseover="showInfo(2)" @mouseout="hideInfo()" alt="Github Link"   contain @click="openInNewTab('https://www.github.com/' + github)"  :src="require('@/assets/members/GithubIcon.png')" />
+        </v-col>
+        <v-col v-if="discord">
+        <font-awesome-icon :icon="['fab', 'discord']" size='3x' style="color:black"         width='2.4em' @mouseover="showInfo(1)" @mouseout="hideInfo()" alt="Discord Icon"  contain @click="copyText()"  :src="require('@/assets/members/DiscordIcon.png')" />
+        </v-col>
     </v-row>
     </v-card-text>
 
@@ -122,5 +127,9 @@
     span
     {
         font-size: 3.2em
+    }
+    font-awesome-icon
+    {
+        color:blue;
     }
 </style>
