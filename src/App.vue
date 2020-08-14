@@ -4,8 +4,11 @@
 <!-- Please follow the conventions below for id names (idAbout, idCompetitions, etc.)                                              -->
 
   <v-app>
+
     <Menu/>
+  
     <v-main> 
+
 		<Slideshow /> 
 		<About id="idAbout"/>
 
@@ -32,6 +35,7 @@
 	import Donate         from './components/Donate';
 	import Contact        from './components/Contact';
 	import ImageDisplayer from './components/ImageDisplayer';
+
 	import Sponsors		  from './components/Sponsors';
     import Members        from './components/Members';
 
@@ -48,6 +52,7 @@
 			Donate,
 			Contact,
 			ImageDisplayer,
+
 			Sponsors,
             Members,
 		},

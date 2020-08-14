@@ -14,6 +14,8 @@
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-scroll-stop": "^0.1.5",
+    "vuelidate": "^0.7.5",
     "vuetify": "^2.2.11"
   },
   "devDependencies": {
