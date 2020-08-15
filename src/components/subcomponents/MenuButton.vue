@@ -20,6 +20,8 @@
         {
             jumpToElement(idTarget)
             {
+                if(idTarget === 'idContactForm');
+                { document.getElementById('idContactForm').style.display = 'block';} 
                 // document.getElementById(idTarget).scrollIntoView() has issues with an offset scroll. The "-55" corrects this.
                 // This -55 may or may not need to be further tweaked after future changes.
                 const y = document.getElementById(idTarget).getBoundingClientRect().top + window.pageYOffset - 55;

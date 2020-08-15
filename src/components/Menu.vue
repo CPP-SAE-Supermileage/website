@@ -1,15 +1,10 @@
 <template>
 
-
-  
-
 <!-- DO NOT ADD NEW MENU BUTTONS HERE.                                                              -->
 <!-- Please see ./subcomponents/MenuButtons.vue for adding new buttons                              -->
 <!-- After ADDING a new button, you must adjust the conditional on line 50 by adding to the number  -->
 <!-- This will make the menu buttons collapse at a larger screen width, to account for the space    -->
 <!--    required by the new button                                                                  -->
-
-<div>
 
 <v-app-bar  ref="appBarRef"  app  color="primary"  dark>
     <div>
@@ -43,7 +38,6 @@ export default
     ({
         displayHamburger: false,
         drawer: false,
-
     }),
     
     components:

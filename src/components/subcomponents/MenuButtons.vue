@@ -11,7 +11,7 @@
     <MenuButton buttonText="Members"      targetId="idMembers"/>     <br><br>
     <MenuButton buttonText="Sponsors"     targetId="idSponsors"/>    <br><br>
     <MenuButton buttonText="Donate"       targetId="idDonate"/>      <br><br>
-    <MenuButton buttonText="Contact"      targetId="idContact"/>     <br><br>
+    <MenuButton buttonText="Contact"      targetId="idContactForm"/>     <br><br>
 </div>
 </template>
 
