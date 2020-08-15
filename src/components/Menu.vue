@@ -2,18 +2,6 @@
 
 
   
-  
-
-<v-card>
-
-    <!--Update the z-index upon click to make the form appear and disappear-->
-    <v-div class = "dark-background" :style="{ zIndex: zindex}">
-        <v-div class = "contact-form">
-          <v-div class = "close" @click="closeOnClicked" ><h4>+</h4></v-div>
-          <Form/>
-        </v-div>
-    </v-div>
-   
 
 <!-- DO NOT ADD NEW MENU BUTTONS HERE.                                                              -->
 <!-- Please see ./subcomponents/MenuButtons.vue for adding new buttons                              -->
