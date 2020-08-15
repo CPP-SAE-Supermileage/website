@@ -27,13 +27,6 @@
       <span class="tab"/>Although primarily comprised of engineering and computer science students,
       we welcome any individual motivated to go the extra mile with us!
     </P>
-    <v-btn href="" target="_blank">
-      Engineering
-    </v-btn>
-
-    <v-btn href="" target="_blank">
-      Computer Science
-    </v-btn>
 
   </v-container>
 </template>

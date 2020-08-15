@@ -1,5 +1,6 @@
 <template>
 <form @submit.prevent="submit">
+    <v-icon style="margin-left: 90%" @click="hideForm">mdi-close-box</v-icon>
 	<ul>
 	<li>
 	<v-text-field 
@@ -190,6 +191,11 @@ export default
             this.major = ''
             this.gradTerm = ''
             this.submitMessage = null;
+        },
+        
+        hideForm()
+        {
+            document.getElementById('idContactForm').style.display = 'none';
         },
     }
 

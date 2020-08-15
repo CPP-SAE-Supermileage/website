@@ -23,6 +23,7 @@
 		<Donate/>
 
 		<Contact id="idContact"/>
+        <Form id="idContactForm" style="display: none;"/>
     </v-main>
   </v-app>
 </template>
@@ -38,11 +39,12 @@
 
 	import Sponsors		  from './components/Sponsors';
     import Members        from './components/Members';
+    import Form           from './components/Form';
 
 	export default 
 	{
 		name: 'App',
-
+        
 		components: 
 		{
 			Menu,
@@ -55,6 +57,7 @@
 
 			Sponsors,
             Members,
+            Form,
 		},
 	};
 </script>
