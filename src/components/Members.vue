@@ -12,6 +12,8 @@
 <v-container>
     <h2>Active Members</h2>
     <v-row justify="center">
+        <MemberCard name="Maximum Wilder-Smith" roles="President and Software Lead" email="mwildersmith@cpp.edu" 
+          github="maxwildersmith" />
         <MemberCard name="Dakota Eckheart" roles="Treasurer and Software Team Member" email="deckheart@cpp.edu" 
           discord="dakota#7191" github="deckheart" imageName="DE.png"/>
           

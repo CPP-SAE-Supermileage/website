@@ -1,5 +1,5 @@
 <template>
-<div>
+
 <!-- DO NOT ADD NEW MENU BUTTONS HERE.                                                              -->
 <!-- Please see ./subcomponents/MenuButtons.vue for adding new buttons                              -->
 <!-- After ADDING a new button, you must adjust the conditional on line 50 by adding to the number  -->
