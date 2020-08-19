@@ -5,7 +5,7 @@
 <!-- After ADDING a new button, you must adjust the conditional on line 50 by adding to the number  -->
 <!-- This will make the menu buttons collapse at a larger screen width, to account for the space    -->
 <!--    required by the new button                                                                  -->
-
+<div>
 <v-app-bar  ref="appBarRef"  app  color="primary"  dark>
     <div>
         <v-img  alt="CPP Logo"  class="shrink mr-2 logo"  contain  :src="require('@/assets/logo.png')"/>
