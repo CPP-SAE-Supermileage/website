@@ -13,18 +13,17 @@
       <br />New members are always welcome, join below!
     </p>
   -->
-    <p class="paragraph font-weight-regular">
-      <span class="tab"/>Established in the fall of 2018, Cal. Poly Pomona's Society of Automotive Engineers Supermileage 
+    <p class="paragraph font-weight-regular text-center">
+      Established in the fall of 2018, Cal. Poly Pomona's Society of Automotive Engineers: Supermileage 
       was founded to engineer the most fuel efficient vehicles to fight against climate change. 
       Despite no prior experience, our team built Cal. Poly Pomona’s first ever super-fuel-efficient vehicle, Moonshot, 
       from scratch in just over a year. CPP SAE Supermileage designs, analyzes and manufactures its own aerodynamic shells,
       chassis, steering systems and power control units in-house with funds from sponsors
       and donors. To create the ultimate fuel efficient machine, our team has embraced the latest developments in machine learning,
       computer vision, sensor fusion and autonomous driving, forming into an
-      engineering and computer science driven organization in early 2020.
+      engineering and computer science driven organization.
       <br>
-      <br>
-      <span class="tab"/>Although primarily comprised of engineering and computer science students,
+      Although primarily comprised of engineering and computer science students,
       we welcome any individual motivated to go the extra mile with us!
     </P>
 

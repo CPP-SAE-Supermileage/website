@@ -14,11 +14,21 @@
     <v-row justify="center">
         <MemberCard name="Maximum Wilder-Smith" roles="President and Software Lead" email="mwildersmith@cpp.edu" 
           github="maxwildersmith" />
+
+        <MemberCard name="Damian Ugalde" roles="Engineering Lead" email="dpugalde@cpp.edu" 
+          github="DamianPilot382" />
+
         <MemberCard name="Dakota Eckheart" roles="Treasurer and Software Team Member" email="deckheart@cpp.edu" 
-          discord="dakota#7191" github="deckheart" imageName="DE.png"/>
+          discord="dakota#7191" github="deckheart"/>
           
         <MemberCard name="Steven Chan" roles="Software Team Member" email="sychan@cpp.edu"
-          discord="Banana#4408" github="FeelsBadnana" imageName="SC.png"/>
+          discord="Banana#4408" github="FeelsBadnana" />
+
+        <MemberCard name="Bao Nguyen" roles="Software Team and Website Developer" email="bvnguyen1@cpp.edu"
+          github="bvnguyen1" />
+
+        <MemberCard name="Kyo Kondo Nguyen" roles="Software Team and Website Developer" email="kjkondo@cpp.edu"
+          github="kjkondo" />
           
         <MemberCard name="Daniel Milligan" roles="Software Team and Website Developer" email="ddmilligan@cpp.edu" 
           github="The-Mills"/>
@@ -36,13 +46,13 @@
     <h2>Alumni and Former Members</h2>
     <p>
         Josue Castaneda - President (2019-2020)<br>
-        Matthew Caballero - Vice President (????)<br>
-        Peter Kyunghoon Lee - Treasurer (????)<br>
+        Matthew Caballero - Vice President (2019-2020))<br>
+        Peter Kyunghoon Lee - Treasurer (2019-2020)<br>
         Matthew Bell<br>
         Alejandro Robles<br>
         Kate Ly<br>
         Jiangzheng Pan<br>
-        Stuart Geyer - Honorary Member(what?)<br>
+        Stuart Geyer - Honorary Member<br>
     </p>
 </v-container>
 </template>

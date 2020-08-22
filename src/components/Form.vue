@@ -8,6 +8,7 @@
         :error-messages="nameErrors"
         label="Name"
         required
+        name="name"
         @input="$v.name.$touch()"
         @blur="$v.name.$touch()"
       ></v-text-field>
@@ -18,6 +19,7 @@
         :error-messages="emailErrors"
         label="E-mail"
         required
+        name="email"
         @input="$v.email.$touch()"
         @blur="$v.email.$touch()"
       ></v-text-field>
@@ -25,74 +27,37 @@
     <li>
       <v-text-field
         v-model="major"
-        :error-messages="majorErrors"
         label="Major"
-        required
-        @input="$v.major.$touch()"
-        @blur="$v.major.$touch()"
+        name="major"
       ></v-text-field>
     </li>
     <li>
       <v-text-field
         v-model="gradTerm"
-        :error-messages="termErrors"
         label="Graduation Term"
-        required
-        @input="$v.gradTerm.$touch()"
-        @blur="$v.gradTerm.$touch()"
+        no-resize
+        name="gradTerm"
       ></v-text-field>
     </li>
     
-    <v-row>
-    <h6 style="margin-left:1em; margin-top:1em; color:#686868;">Areas of interest: </h6>
-    </v-row>
-
-    <v-row>
-    <v-col cols="12"  sm="6">
-        <v-row>
-        <h6 style="margin-left:1em; color:#686868;">Computer Science</h6>
-        </v-row>
-    <v-checkbox style="margin:0;"
-        label="ML/CV"
-        hide-details
-    ></v-checkbox>
-    <v-checkbox
-        label="CoppoliaSIM"
-        hide-details
-    ></v-checkbox>
-    <v-checkbox
-        label="Hardware"
-        hide-details
-    ></v-checkbox>
-    </v-col>
-    <v-col cols="12"  sm="6">
-    <v-row>
-        <h6 style="margin-left:1em; color:#686868;">Engineering</h6>
-        </v-row>
-    <v-checkbox style="margin:0;"
-        label="CFD"
-        hide-details
-    ></v-checkbox>
-    <v-checkbox
-        label="Design"
-        hide-details
-    ></v-checkbox>
-    <v-checkbox
-        label="Electrical"
-        hide-details
-    ></v-checkbox>
-    </v-col>
-    </v-row>
-
+  <li>
     <v-textarea
-    outlined
-        name="experienceText"
-        label="Areas of experience (optional)"
-        ></v-textarea>
-
-        <v-btn class="mr-4" @click="submit">Submit</v-btn>
+        outlined
+        v-model="message"
+        name="message"
+        label="Message"
+        required
+    ></v-textarea>
+  </li>
+  <br>
+  <br>
+  <br>
+  <br>
+  <li>
+        <v-btn type="submit" class="mr-4" @click="submit">Submit</v-btn>
         <v-btn class="mr-4" @click="clear">Clear</v-btn>
         <p id = "submit-error">{{ submitMessage }}</p>
+  </li>
     </ul>
 
 </form>
@@ -103,7 +68,7 @@
 <script>
 const { validationMixin } = require('vuelidate')
 const { required, email } = require('vuelidate/lib/validators')
-
+import emailjs from 'emailjs-com';
 
 
 
@@ -121,6 +86,7 @@ export default
         email: '',
         major: '',
         gradTerm: '',
+        message: '',
         validName: false,
         submitMessage: null,
     }),
@@ -133,12 +99,6 @@ export default
         email: { 
             required, 
             email 
-        },
-        major: { 
-            required 
-        },
-        gradTerm: {
-            required
         },
     },
 
@@ -158,29 +118,21 @@ export default
           !this.$v.email.required && errors.push('E-mail is required')
           return errors
         },
-        majorErrors () {
-          const errors = []
-          if (!this.$v.major.$dirty) 
-            return errors
-          !this.$v.major.required && errors.push('Major is required.')
-          return errors
-        }, 
-        termErrors () {
-          const errors = []
-          if (!this.$v.gradTerm.$dirty) 
-            return errors
-          !this.$v.gradTerm.required && errors.push('Graduation term is required.')
-          return errors
-        },
     },
 
     methods: {
-        submit() {
+        submit(e) {
             console.log('submit clicked')
             this.$v.$touch()
             if (this.$v.$invalid) {
                this.submitMessage = "*Please fill out the form correctly."
             } else{
+              emailjs.sendForm('gmail', 'contact_form', e.target, 'user_YyleyZlFb5Zl8N5KSnuIZ')
+        .then((result) => {
+            console.log('SUCCESS!', result.status, result.text);
+        }, (error) => {
+            console.log('FAILED...', error);
+        });
                this.submitMessage = null;
             }
          },
@@ -190,6 +142,7 @@ export default
             this.email = ''
             this.major = ''
             this.gradTerm = ''
+            this.message = ''
             this.submitMessage = null;
         },
         

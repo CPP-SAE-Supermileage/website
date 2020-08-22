@@ -1,28 +1,29 @@
 <template>
   <v-container class="text-center" style="height:45vh;">
     <h2>Competitions</h2>
-    <ul id = "competition-list">
-      <li @click="autonomousClicked" :style="{ fontWeight: autoFont}">
-        Autonomous
-      </li>
-      <li @click="onTrackClicked" :style="{ fontWeight: onTrackFont}">
-         On-Track
-      </li>
-      <li @click="offTrackClicked" :style="{ fontWeight: offTrackFont}">
-        Off-Track
-      </li>
-    </ul>
+    <v-tabs
+      v-model="tab"
+      grow>
+      <v-tab
+        v-for="comp in competitions"
+        :key="comp.index">
+        {{comp.type}}
+      </v-tab>
+    </v-tabs>
+    <v-tabs-items v-model="tab">
+      <v-tab-item
+        v-for="comp in competitions"
+        :key="comp.index">
+          <v-card flat>
 
-
-    <p class="text-left ">{{ content }}</p>
-
-
-    <p class="subheading font-weight-regular">
-        <a
+          <v-card-text class="text-center ">{{ comp.content }}</v-card-text>
+          </v-card>
+      </v-tab-item>
+    </v-tabs-items>
+      <v-btn
       href="https://www.makethefuture.shell/en-gb/shell-eco-marathon"
       target="_blank"
-    >Shell Eco Marathon</a>
-    </p>
+    >Shell Eco Marathon</v-btn>
   </v-container>
 </template>
 <script>
@@ -37,30 +38,49 @@ export default
       onTrackFont: 'normal',  
       offTrackFont: 'normal', 
 
+      tab: null,
+      competitions: [
+        {
+          index: 1,
+          type: 'On-track',
+          content: 'The Shell Eco-marathon On-Track Competition is based on the longest-running format, which simply focuses on the energy efficiency aspect of the vehicle. Teams will be given a fixed number of laps on the track to drive their vehicle. After each lab, the judges will caculate their energy efficiency and detemine the result. There are various categories in this competition, based on design type and energy source. Our car falls into the prototype eletric category as it uses a non-convential chasis and is powered by a battery pack.'
+
+        },
+        {
+          index: 2,
+          type: 'Off-track',
+          content: 'The Shell Eco-marathon Off-Track Competition is designed to cover a wider aspect of development and asks participants to consider real-world requirements. This is a primarily engineering and design based competition, with industry professionals judging our design and design process, as well as theoretical results from our car.'
+
+        },
+        {
+          index: 3,
+          type: 'Autonomous',
+          content: 'With the new Autonomous Competition in development at Shell Eco-marathon, we are expanding our software team to implement autonomous technology into our vehicle and take it to the next level. This competition is designed to test how well our vehicle, as well as a simulated urban car can avoid obstacles and get through a series of challenges. These competitions are primarily software/hardware based as we must write the code from scratch, and in the case of the On-track compeition, wire and manage our car\'s sensors.'
+        }
+      ]
+
       // This is the default content, if you want to change this content, 
       // make sure to change the content in 'autonomousClicked' method as well.
-      content: 'With the new Autonomous Competition in development at Shell Eco-marathon, we are expanding our software team to implement autonomous technology into our vehicle and take it to the next level. This competition is designed to test the vehicle capability of avoiding obstacles and get through a series of challenges. There are two main challenges in this competition, the test-track challenge and the parking challenge. On the test-track, the vehicle have to show good performance in accelerate, decelerate, and maneuver to avoid obstacle as well as taking turn. The parking challenge requires the vehicle to have precise estimates and calculations of its surrounding to maneuver and position itself into small space.',
     }),
     methods:
     {
         // the content will get update as the user select each area of competition
         autonomousClicked()
         {
-          this.content = 'With the new Autonomous Competition in development at Shell Eco-marathon, we are expanding our software team to implement autonomous technology into our vehicle and take it to the next level. This competition is designed to test the vehicle capability of avoiding obstacles and get through a series of challenges. There are two main challenges in this competition, the test-track challenge and the parking challenge. On the test-track, the vehicle have to show good performance in accelerate, decelerate, and maneuver to avoid obstacle as well as taking turn. The parking challenge requires the vehicle to have precise estimates and calculations of its surrounding to maneuver and position itself into small space.';
+          this.content = '';
           this.autoFont = 'bold';
           this.onTrackFont = "normal";      
           this.offTrackFont = 'normal';
         },
         onTrackClicked()
         {
-          this.content = 'The Shell Eco-marathon On-Track Competition is based on the concept of longest-running format, which simple focus on the energy efficuency aspect of the vehicle. Teams will be given a fixed number of laps on the track to drive their vehicle. After each lab, the judges will caculate their energy efficiency and detemine the result. There are two energy category in this competition, internal combustion engine and electric vehicle. Our car is running on an electric battery because we believe sustainable energy will be needed for the environment. We are looking to compete this season with our prototype which designed to cut out some basic car needs and challenge the boundaries in energy efficiency. However, we are also looking to design a vehicle that is capable of city driving which will include basic need such as passenger space, mirror, wheels,etc., in the near future.';
+          this.content = '';
           this.onTrackFont = "bold";
           this.autoFont = 'normal';
           this.offTrackFont = 'normal';
         },
         offTrackClicked()
         {
-          this.content = 'The Shell Eco-marathon Off-Track Competition is designed to cover a wider aspect of development that asks participant to consider real-world requirements. This award will be consider based on the team achievement off the track.';
           this.offTrackFont = 'bold';
           this.autoFont = 'normal';
           this.onTrackFont = "normal"; 

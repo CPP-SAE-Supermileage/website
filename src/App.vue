@@ -14,12 +14,12 @@
 
 		
 		<Competitions id="idCompetitions"/>
-        <ImageDisplayer id="idMembers" :imgSrc="'members.png'" :displayHeight="400" headerTxt="Join the Team" txt="Become part of something bigger than yourself!"/>
+        <ImageDisplayer id="idMembers" :imgSrc="'members.png'" :displayHeight="400" headerTxt="Join the Team!"/>
 		<Members/>
 		<ImageDisplayer id="idSponsors" :imgSrc="'sponsors.png'" :displayHeight="400" headerTxt="Sponsors" txt="None of this would be possible without our sponsors!"/>
 		<Sponsors/>
 
-		<ImageDisplayer id="idDonate" :imgSrc="'donate2.png'" :displayHeight="200" headerTxt="Donate to CPP SAE Supermileage"/>
+		<ImageDisplayer id="idDonate" :imgSrc="'donate.png'" :displayHeight="200" headerTxt="Donate to CPP SAE Supermileage"/>
 		<Donate/>
 
 		<Contact id="idContact"/>
@@ -39,7 +39,7 @@
 
 	import Sponsors		  from './components/Sponsors';
     import Members        from './components/Members';
-    import Form           from './components/Form';
+	import Form           from './components/Form';
 
 	export default 
 	{
@@ -57,7 +57,7 @@
 
 			Sponsors,
             Members,
-            Form,
+			Form,
 		},
 	};
 </script>

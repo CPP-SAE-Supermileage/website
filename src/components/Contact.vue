@@ -4,7 +4,7 @@
       Contact
     </h2>
     
-    <p>View us on myBAR, Instagram, or join our Discord!</p>
+    <p>View us on myBAR, Instagram, or get in touch below!</p>
     <v-btn @click="showForm">Apply Now!</v-btn>
     <div class="d-flex justify-content-center">
       <div class='clickme'>
@@ -14,10 +14,6 @@
       <div class='clickme'>
         <a href="https://mybar.cpp.edu/organization/saesupermileage/" target="_blank">
           <v-img alt="myBar Logo" height='100' width='100' contain :src="require('@/assets/bar.jpg')" /></a>
-      </div>
-      <div class='clickme'>
-        <a href="https://discord.gg/HqD4tM5" target="_blank">
-          <v-img alt="Discord Logo" height='100' width='100' contain :src="require('@/assets/discord.png')" /></a>
       </div>
     </div>
     
